@@ -3,123 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جاري تحضير الرابط...</title>
+    <title>جاري تجهيز الرابط...</title>
+    
+    <!-- كود التحقق الخاص بـ Monetag -->
+    <meta name="monetag" content="4fecd733f6ba0c6b087def878afcacaf">
+
+    <!-- ======================================================= -->
+    <!-- [مكان أكواد الـ Popunder للشبكات الثلاث (Adsterra, Monetag, PropellerAds)] -->
+    <!-- بتنسخ الكود المباشر للـ Popunder من كل شبكة وتحطه هنا بالظبط -->
+    <!-- ======================================================= -->
+
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
         body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .card {
-            background: #1e293b;
-            padding: 35px 25px;
-            border-radius: 20px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            font-family: Arial, sans-serif;
             text-align: center;
-            max-width: 480px;
-            width: 100%;
-            border: 1px solid #334155;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 15px;
+            direction: rtl;
         }
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #38bdf8;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
+        .ad-box {
+            background-color: #e9ecef;
+            border: 2px dashed #cccccc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
         }
         .timer-box {
-            background: #0f172a;
-            border: 2px dashed #38bdf8;
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0;
             padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 25px;
+            background: #eef2ff;
+            border-radius: 8px;
         }
-        .timer {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #f59e0b;
-        }
-        .timer-text {
-            font-size: 0.85rem;
-            color: #64748b;
-            margin-top: 5px;
-        }
-        .btn {
+        .btn-link {
             display: none;
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            color: #ffffff;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
             text-decoration: none;
-            padding: 16px 30px;
-            border-radius: 12px;
+            font-size: 18px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 8px;
+            margin-top: 15px;
             cursor: pointer;
             border: none;
-            width: 100%;
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
         }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
+        .btn-link:hover {
+            background-color: #218838;
         }
     </style>
-
-    <!-- مكان كود الإعلانات 1: PropellerAds (Pop-under) -->
-    <!-- سنضعه هنا لاحقاً -->
-
-    <!-- مكان كود الإعلانات 2: HilltopAds (Interstitial) -->
-    <!-- سنضعه هنا لاحقاً -->
-
 </head>
 <body>
 
-    <div class="card">
-        <h2>جاري تحضير الرابط المطلوب...</h2>
-        <p>يرجى الانتظار بضع ثوانٍ لحين تجهيز رابط التحويل المباشر الخاص بك.</p>
-        
-        <div class="timer-box" id="timer-container">
-            <div class="timer" id="countdown">10</div>
-            <div class="timer-text">ثوانٍ متبقية...</div>
-        </div>
+<div class="container">
+    <h2>انظر أسفله للوصول إلى الرابط المطلوب</h2>
+    <p>يرجى الانتظار بضع ثوانٍ لحين تجهيز رابط التحميل/المحتوى الخاص بك.</p>
 
-        <!-- زر الانتقال (سيتم وضع رابط Monetag Smartlink فيه لاحقاً) -->
-        <a id="final-btn" href="#" class="btn" target="_blank">اضغط هنا للانتقال للرابط النهائي 🚀</a>
+    <!-- مكان الإعلان الأول (أعلى العداد) -->
+    <div class="ad-box">
+        <!-- ضع كود إعلان Banners من Adsterra أو Monetag هنا -->
+        [مكان إعلان هيدر / Banner 1]
     </div>
 
-    <!-- مكان كود الإعلانات 3: Adsterra (Social Bar) -->
-    <!-- سنضعه هنا لاحقاً -->
+    <!-- صندوق العداد التنازلي -->
+    <div class="timer-box">
+        سيكون الرابط جاهزاً خلال: <span id="countdown">8</span> ثانية
+    </div>
 
-    <script>
-        // عداد تنازلي لمدة 10 ثوانٍ
-        let timeLeft = 10;
-        const timerElem = document.getElementById('countdown');
-        const timerContainer = document.getElementById('timer-container');
-        const btnElem = document.getElementById('final-btn');
+    <!-- مكان الإعلان الثاني (بجوار / تحت العداد مباشرة) -->
+    <div class="ad-box">
+        <!-- ضع كود إعلان Banners من PropellerAds أو الشبكة الثانية هنا -->
+        [مكان إعلان وسط / Banner 2]
+    </div>
 
-        const countdown = setInterval(() => {
+    <!-- الزرار الذي يظهر بعد انتهاء العداد -->
+    <a id="downloadBtn" href="https://YOUR-DIRECT-LINK-HERE.com" target="_blank" class="btn-link">
+        اضغط هنا للتوجه إلى الرابط الآن
+    </a>
+
+    <!-- مكان الإعلان الثالث (أسفل الزر) -->
+    <div class="ad-box">
+        [مكان إعلان فوتر / Banner 3]
+    </div>
+</div>
+
+<script>
+    // تحديد زمن العداد (8 ثوانٍ)
+    var timeLeft = 8;
+    var elem = document.getElementById('countdown');
+    var btn = document.getElementById('downloadBtn');
+
+    var timerId = setInterval(countdown, 1000);
+
+    function countdown() {
+        if (timeLeft == 0) {
+            clearTimeout(timerId);
+            elem.parentNode.style.display = 'none'; // إخفاء نص العداد
+            btn.style.display = 'inline-block'; // إظهار الزرار
+        } else {
+            elem.innerHTML = timeLeft;
             timeLeft--;
-            timerElem.textContent = timeLeft;
-            if (timeLeft <= 0) {
-                clearInterval(countdown);
-                timerContainer.style.display = 'none';
-                btnElem.style.display = 'block';
-            }
-        }, 1000);
-    </script>
+        }
+    }
+</script>
+
 </body>
 </html>
