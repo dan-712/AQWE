@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جاري تحضير الرابط...</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #1e293b;
+            padding: 35px 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+            border: 1px solid #334155;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .timer-box {
+            background: #0f172a;
+            border: 2px dashed #38bdf8;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+        .timer {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f59e0b;
+        }
+        .timer-text {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 5px;
+        }
+        .btn {
+            display: none;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
+        }
+    </style>
+
+    <!-- مكان كود الإعلانات 1: PropellerAds (Pop-under) -->
+    <!-- سنضعه هنا لاحقاً -->
+
+    <!-- مكان كود الإعلانات 2: HilltopAds (Interstitial) -->
+    <!-- سنضعه هنا لاحقاً -->
+
+</head>
+<body>
+
+    <div class="card">
+        <h2>جاري تحضير الرابط المطلوب...</h2>
+        <p>يرجى الانتظار بضع ثوانٍ لحين تجهيز رابط التحويل المباشر الخاص بك.</p>
+        
+        <div class="timer-box" id="timer-container">
+            <div class="timer" id="countdown">10</div>
+            <div class="timer-text">ثوانٍ متبقية...</div>
+        </div>
+
+        <!-- زر الانتقال (سيتم وضع رابط Monetag Smartlink فيه لاحقاً) -->
+        <a id="final-btn" href="#" class="btn" target="_blank">اضغط هنا للانتقال للرابط النهائي 🚀</a>
+    </div>
+
+    <!-- مكان كود الإعلانات 3: Adsterra (Social Bar) -->
+    <!-- سنضعه هنا لاحقاً -->
+
+    <script>
+        // عداد تنازلي لمدة 10 ثوانٍ
+        let timeLeft = 10;
+        const timerElem = document.getElementById('countdown');
+        const timerContainer = document.getElementById('timer-container');
+        const btnElem = document.getElementById('final-btn');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElem.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerContainer.style.display = 'none';
+                btnElem.style.display = 'block';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
